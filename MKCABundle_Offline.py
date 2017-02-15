@@ -14,7 +14,7 @@
 #   Any backslash character without a hex (non \x) will be written as the way it was (the idea based on OpenSSL and/or RFC).
 # - Completely align certificate based on OpenSSL rule or RFC rule.
 # - Open "Mozilla Certificate Data" file in binary mode and save "CA Bundle" in binary mode.
-#   This resolve the issue with "Mozilla Certificate Data" file contain backslash chracter.
+#   This resolve the issue with "Mozilla Certificate Data" file contain backslash character.
 # - etc.
 #
 # The Limitation are:

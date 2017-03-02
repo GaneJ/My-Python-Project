@@ -418,7 +418,7 @@ def main(argv):
 					NextParam = str(argv[I])
 				except:
 					break
-				if (NextParam == 'l') or (NextParam == 'L'):
+				if (NextParam == '-l') or (NextParam == '-L'):
 					if not IsPrintLabel:
 						raise IndexError
 					IsPrintLabel = False
@@ -442,9 +442,9 @@ def main(argv):
 		return 1
 	except IndexError:
 		print('\nMake CA Bundle - Version %s\n-----------------------------\n\n'
-			  'Usage:\n       MKCABundle_Offline [certdata.txt] [OutputFileName] [L]\n'
+			  'Usage:\n       MKCABundle_Offline [certdata.txt] [OutputFileName] [-L]\n'
 			  '       \n       OutputFileName : If itsn\'t supply, the default will be "CABundle.pem".\n'
-			  '       L              : Don\'t put label in output file.' % ProgVersion)
+			  '       -L              : Don\'t put label in output file.' % ProgVersion)
 		return 1
 	
 	NextParam = ''
